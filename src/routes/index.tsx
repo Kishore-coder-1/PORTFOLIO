@@ -179,25 +179,53 @@ function Index() {
     return matchesFilter && matchesSearch;
   });
 
-  const submit = (e: React.FormEvent) => {
+  const submit = async (e: React.FormEvent) => {
     e.preventDefault();
+
     const name = form.name.trim();
     const email = form.email.trim();
     const message = form.message.trim();
+
     if (!name || name.length > 100) {
       toast.error("Please enter a valid name.");
       return;
     }
+
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || email.length > 255) {
       toast.error("Please enter a valid email address.");
       return;
     }
+
     if (!message || message.length > 1000) {
       toast.error("Message must be between 1 and 1000 characters.");
       return;
     }
-    toast.success("Thanks! Your message is ready to send — I'll get back to you soon.");
-    setForm({ name: "", email: "", message: "" });
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "f412da53-720e-432c-956b-a7c6cca5f377",
+          name,
+          email,
+          message,
+        }),
+      });
+
+      const result = await response.json();
+      if (result.success) {
+        toast.success("Thanks! Your message has been sent successfully.");
+        setForm({ name: "", email: "", message: "" });
+      } else {
+        toast.error("Failed to send message. Please try again.");
+      }
+    } catch (error) {
+      toast.error("An error occurred. Please try again.");
+    }
   };
 
   return (
@@ -597,6 +625,7 @@ function Index() {
               </div>
               <h3 className="text-3xl sm:text-4xl font-bold text-foreground">Reach Out Anytime</h3>
               <form onSubmit={submit} className="glass space-y-4 rounded-2xl p-7">
+              <input type="hidden" name="access_key" value="f412da53-720e-432c-956b-a7c6cca5f377" />
                 <div className="grid gap-4 sm:grid-cols-2">
                   <div className="space-y-2">
                     <Label htmlFor="name">Name</Label>
