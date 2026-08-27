@@ -601,7 +601,7 @@ function Index() {
         <section id="contact" className="px-5 py-8">
           <div className="mx-auto max-w-6xl">
             <SectionHeading title="" eyebrow="Contact / Get in touch" />
-            <div className="grid gap-6 grid-cols-1 md:grid-cols-2 w-full">
+            <div className="grid gap-6 grid-cols-1">
               <div className="space-y-4">
                 {[
                   { icon: MapPin, label: "Phagwara, Punjab, India", href: null },
