@@ -355,7 +355,7 @@ function Index() {
     Full-stack developer with a focus on AI/ML applications and hardware-software integration. Experienced in end-to-end development, from designing responsive frontend components to setting up backend logic, database schemas, and IoT sensor interfaces.
   </p>
 
-  <div className="grid gap-4 grid-cols-1 sm:grid-cols-1 sm:grid-cols-3 w-full pt-2 text-base text-muted-foreground">
+  <div className="grid gap-4 grid-cols-1 sm:grid-cols-3 w-full pt-2 text-base text-muted-foreground">
     <div>
       <span className="font-bold text-foreground block mb-1">Core Focus</span>
       Building high-availability web applications and intelligent hardware integrations.
@@ -626,7 +626,7 @@ function Index() {
               <h3 className="text-3xl sm:text-4xl font-bold text-foreground">Reach Out Anytime</h3>
               <form onSubmit={submit} className="glass space-y-4 rounded-2xl p-7">
               <input type="hidden" name="access_key" value="f412da53-720e-432c-956b-a7c6cca5f377" />
-                <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 w-full">
+                <div className="grid gap-4 sm:grid-cols-2">
                   <div className="space-y-2">
                     <Label htmlFor="name">Name</Label>
                     <Input
