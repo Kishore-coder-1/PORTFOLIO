@@ -355,7 +355,7 @@ function Index() {
     Full-stack developer with a focus on AI/ML applications and hardware-software integration. Experienced in end-to-end development, from designing responsive frontend components to setting up backend logic, database schemas, and IoT sensor interfaces.
   </p>
 
-  <div className="grid gap-4 sm:grid-cols-3 pt-2 text-base text-muted-foreground">
+  <div className="grid gap-4 grid-cols-1 sm:grid-cols-1 sm:grid-cols-3 w-full pt-2 text-base text-muted-foreground">
     <div>
       <span className="font-bold text-foreground block mb-1">Core Focus</span>
       Building high-availability web applications and intelligent hardware integrations.
@@ -378,7 +378,7 @@ function Index() {
         <section id="about" className="px-5 py-4">
           <div className="mx-auto max-w-6xl">
             <SectionHeading eyebrow="About me" title="Engineering across the full stack" />
-            <div className="grid gap-6 lg:grid-cols-[1.2fr_1fr]">
+            <div className="grid gap-6 grid-cols-1 lg:grid-cols-2 w-full">
               <div className="glass rounded-2xl p-7">
                 <p className="text-base leading-relaxed text-muted-foreground">
                   I'm a Computer Science undergraduate specializing in{" "}
@@ -392,7 +392,7 @@ function Index() {
                   wiring embedded hardware into clean, usable interfaces.
                 </p>
               </div>
-              <div className="grid gap-4">
+              <div className="grid gap-4 grid-cols-1 w-full">
                 {[
                   "Full-stack architecture & clean code practices",
                   "Relational database design & optimization",
@@ -413,7 +413,7 @@ function Index() {
         <section id="skills" className="px-5 py-8">
           <div className="mx-auto max-w-6xl">
             <SectionHeading eyebrow="Skills" title="Tools and fundamentals I build with" />
-            <div className="grid gap-5 sm:grid-cols-2">
+            <div className="grid gap-5 grid-cols-1 sm:grid-cols-2 w-full">
               {SKILL_GROUPS.map(({ title, icon: Icon, items }) => (
                 <div key={title} className="glass glass-hover rounded-2xl p-6">
                   <div className="flex min-w-0 items-center gap-3">
@@ -440,7 +440,7 @@ function Index() {
     Proficient across modern software stacks and hardware interfaces. Capable of taking concepts from low-level system design and relational data modeling to polished frontend interfaces and embedded IoT triggers.
   </p>
 
-  <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 pt-2 text-base text-muted-foreground">
+  <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 w-full pt-2 text-base text-muted-foreground">
     <div>
       <span className="font-bold text-foreground block mb-2">Languages</span>
       Core programming in Python, JavaScript, and C focused on algorithm efficiency, clean syntax, and system logic.
@@ -481,7 +481,7 @@ function Index() {
                 </button>
               ))}
             </div>
-            <div className="grid gap-6 md:grid-cols-2">
+            <div className="grid gap-6 grid-cols-1 md:grid-cols-2 w-full">
               {visible.map((project) => (
                 <article key={project.title} className="glass glass-hover rounded-2xl p-7">
                   <p className="text-xs font-semibold uppercase tracking-widest text-accent">
@@ -601,7 +601,7 @@ function Index() {
         <section id="contact" className="px-5 py-8">
           <div className="mx-auto max-w-6xl">
             <SectionHeading title="" eyebrow="Contact / Get in touch" />
-            <div className="grid gap-6 grid-cols-1">
+            <div className="grid gap-6 grid-cols-1 md:grid-cols-2 w-full">
               <div className="space-y-4">
                 {[
                   { icon: MapPin, label: "Phagwara, Punjab, India", href: null },
@@ -626,7 +626,7 @@ function Index() {
               <h3 className="text-3xl sm:text-4xl font-bold text-foreground">Reach Out Anytime</h3>
               <form onSubmit={submit} className="glass space-y-4 rounded-2xl p-7">
               <input type="hidden" name="access_key" value="f412da53-720e-432c-956b-a7c6cca5f377" />
-                <div className="grid gap-4 sm:grid-cols-2">
+                <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 w-full">
                   <div className="space-y-2">
                     <Label htmlFor="name">Name</Label>
                     <Input
