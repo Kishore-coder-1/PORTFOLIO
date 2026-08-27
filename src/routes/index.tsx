@@ -375,7 +375,7 @@ function Index() {
         </section>
 
         {/* About */}
-        <section id="about" className="px-1 py-">
+        <section id="about" className="px-5 py-20">
           <div className="mx-auto max-w-6xl">
             <SectionHeading eyebrow="About me" title="Engineering across the full stack" />
             <div className="grid gap-6 lg:grid-cols-[1.2fr_1fr]">
