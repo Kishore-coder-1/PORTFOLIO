@@ -375,7 +375,7 @@ function Index() {
         </section>
 
         {/* About */}
-        <section id="about" className="px-5 py-20">
+        <section id="about" className="px-5 py-8">
           <div className="mx-auto max-w-6xl">
             <SectionHeading eyebrow="About me" title="Engineering across the full stack" />
             <div className="grid gap-6 lg:grid-cols-[1.2fr_1fr]">
@@ -410,7 +410,7 @@ function Index() {
         </section>
 
         {/* Skills */}
-        <section id="skills" className="px-5 py-20">
+        <section id="skills" className="px-5 py-8">
           <div className="mx-auto max-w-6xl">
             <SectionHeading eyebrow="Skills" title="Tools and fundamentals I build with" />
             <div className="grid gap-5 sm:grid-cols-2">
@@ -598,7 +598,7 @@ function Index() {
         </section>
 
         {/* Contact */}
-        <section id="contact" className="px-5 py-20">
+        <section id="contact" className="px-5 py-8">
           <div className="mx-auto max-w-6xl">
             <SectionHeading title="" eyebrow="Contact / Get in touch" />
             <div className="grid gap-6 grid-cols-1">
