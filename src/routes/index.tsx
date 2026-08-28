@@ -153,6 +153,7 @@ const CERTIFICATIONS = [
   { name: "Python Programming", issuer: "Infosys Springboard" },
   { name: "Database Management Systems", issuer: "CodeTantra" },
   { name: "C Programming", issuer: "NeoColab" },
+  { name: "Introduction to Cyber Security", issuer: "Infosys Springboard" },
 ];
 
 function SectionHeading({ eyebrow, title }: { eyebrow: string; title: string }) {
