@@ -132,8 +132,8 @@ const EDUCATION = [
   {
     school: "Lovely Professional University",
     detail: "B.Tech CSE — AI & ML Specialization",
-    period: "2024 - 2028",
-    score: "CGPA: 8.5 / 10.0",
+    period: "2025 - 2029",
+    score: "CGPA: 8.56 / 10.0",
   },
   {
     school: "Sri Chaitanya College",
